@@ -35,7 +35,7 @@ export default new Router({
       ]
     },
     {
-      path: '/sitgmata',
+      path: '/stigmata',
       name: 'Stigmata',
       component: Stigmata,
       children: [
