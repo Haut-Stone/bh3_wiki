@@ -15,7 +15,9 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
+    "amfe-flexible": "^2.2.1",
     "autoprefixer": "^7.1.2",
+    "axios": "^0.18.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
@@ -28,6 +30,7 @@
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
+    "echarts": "^4.1.0",
     "eslint": "^4.15.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-friendly-formatter": "^3.0.0",

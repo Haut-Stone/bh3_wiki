@@ -2,20 +2,20 @@
   <div class="nav_menu">
     <!-- S 顶部标题 A -->
     <header>
-        <h2>武器</h2>
+      <h2>武器</h2>
     </header>
     <!-- E 顶部标题 A -->
 
     <!-- S 导航菜单 A -->
     <nav class="top_nav">
-        <ul>
-            <li><router-link to="/gun">双枪</router-link></li>
-            <li><router-link to="/knife">太刀</router-link></li>
-            <li><router-link to="/artillery">重炮</router-link></li>
-            <li><router-link to="/cross">十字架</router-link></li>
-            <li><router-link to="/sword">大剑</router-link></li>
-            <li><router-link to="/knuckles">拳套</router-link></li>
-        </ul>
+      <ul>
+        <li><router-link to="/gun">双枪</router-link></li>
+        <li><router-link to="/knife">太刀</router-link></li>
+        <li><router-link to="/artillery">重炮</router-link></li>
+        <li><router-link to="/cross">十字架</router-link></li>
+        <li><router-link to="/sword">大剑</router-link></li>
+        <li><router-link to="/knuckles">拳套</router-link></li>
+      </ul>
     </nav>
     <!-- E 导航菜单 A -->
   </div>
@@ -44,7 +44,7 @@ header{
 }
 
 /* 导航菜单 */
-.topNav{
+.top_nav{
     width: 10rem;
     height: 1.093rem;
     font-size: .32rem;

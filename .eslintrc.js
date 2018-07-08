@@ -31,6 +31,8 @@ module.exports = {
     'quotes': [
       'error',
       'single'
-    ]
+    ],
+    // 允许有声明后未使用的变量
+    "no-unused-vars": 'off'
   }
 }
