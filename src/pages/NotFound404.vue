@@ -1,15 +1,15 @@
 <template>
-  <div class="weapon_detail">
+  <div class="notFound">
     <h1>{{msg}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WeaponDetail',
+  name: 'NotFound',
   data () {
     return {
-      msg: '武器详情页'
+      msg: '404页'
     }
   }
 }
