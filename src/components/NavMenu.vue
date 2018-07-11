@@ -9,12 +9,9 @@
     <!-- S 导航菜单 A -->
     <nav class="top_nav">
       <ul>
-        <li><router-link to="/gun">双枪</router-link></li>
-        <li><router-link to="/knife">太刀</router-link></li>
-        <li><router-link to="/artillery">重炮</router-link></li>
-        <li><router-link to="/cross">十字架</router-link></li>
-        <li><router-link to="/sword">大剑</router-link></li>
-        <li><router-link to="/knuckles">拳套</router-link></li>
+        <li v-for="item in items" :key="item.id">
+          <router-link :to="item.path">{{item.text}}</router-link>
+          </li>
       </ul>
     </nav>
     <!-- E 导航菜单 A -->
@@ -23,7 +20,15 @@
 
 <script>
 export default {
-  name: 'NavMenu'
+  name: 'NavMenu',
+  props: {
+    items: {
+      type: Array,
+      default: function () {
+        return []
+      }
+    }
+  }
 }
 </script>
 
