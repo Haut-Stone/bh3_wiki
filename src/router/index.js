@@ -8,6 +8,10 @@ import WeaponDetail from '@/pages/Weapon/WeaponDetail'
 import Stigmata from '@/pages/Stigmata/Stigmata'
 import StigmataList from '@/pages/Stigmata/StigmataList'
 import StigmataDetail from '@/pages/Stigmata/StigmataDetail'
+import NotFound404 from '@/pages/NotFound404'
+import Goods from '@/pages/Phase3/Goods'
+import GoodsList from '@/pages/Phase3/GoodsList'
+import GoodsDetail from '@/pages/Phase3/GoodsDetail'
 
 Vue.use(Router)
 
@@ -44,6 +48,22 @@ export default new Router({
         // 进入不同武器详情的页面 e.g /stigmata/detail/5 代表5号圣痕的详细信息
         { path: 'detail/:id', component: StigmataDetail }
       ]
+    },
+    {
+      path: '/goods',
+      name: 'Goods',
+      component: Goods,
+      children: [
+        // 材料列表页，按分类，星级进行划分 e.g /goods/樱色轮回/4 代表樱色轮回中的4星材料
+        { path: ':type/:star', component: GoodsList },
+        // 进入不同的材料详情页面 e.g /goods/detail/1 代表1号材料的详细信息
+        { path: 'detail/:id', component: GoodsDetail }
+      ]
+    },
+    {
+      path: '*',
+      name: 'NotFound404',
+      component: NotFound404
     }
   ]
 })

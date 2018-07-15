@@ -2,7 +2,7 @@
   <div class="nav_menu">
     <!-- S 顶部标题 A -->
     <header>
-      <h2>武器</h2>
+      <h2>{{name}}</h2>
     </header>
     <!-- E 顶部标题 A -->
 
@@ -27,6 +27,11 @@ export default {
       default: function () {
         return []
       }
+    },
+    name: {
+      type: String,
+      default: '',
+      required: true
     }
   }
 }
