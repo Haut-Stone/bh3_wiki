@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
-
+import * as snowFall from './common/js/snowfall'
 // 引入echarts
 import echarts from 'echarts'
 
@@ -13,6 +13,7 @@ import 'amfe-flexible'
 
 Vue.prototype.$echarts = echarts
 Vue.prototype.$http = axios
+Vue.prototype.$snowFall = snowFall
 // 上线部署主机域名
 Vue.prototype.HOST = 'http://www.gamepaper.cn/'
 Vue.config.productionTip = false
