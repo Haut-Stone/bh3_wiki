@@ -6,15 +6,15 @@
     <section class="main">
       <div class="hbox">
         <div class="pic character">
-          <a href="ph1/index.html"><button class="enter_button"></button></a>
+          <router-link to=""><button class="enter_button"></button></router-link>
         </div>
         <div class="pic weapon">
-          <a href="wea/index.html"><button class="enter_button"></button></a>
+          <router-link to="weapon/gun"><button class="enter_button"></button></router-link>
         </div>
       </div>
       <div class="hbox">
         <div class="pic stigmata">
-          <a href="sti/index.html"><button class="enter_button"></button></a>
+          <router-link to="stigmata/fiveStar"><button class="enter_button"></button></router-link>
         </div>
         <div class="pic goods">
           <a href=""><button class="enter_button"></button></a>

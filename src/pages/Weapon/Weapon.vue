@@ -3,16 +3,19 @@
     <h1 v-if="$route.params.star">{{ $route.params.star }}</h1>
     <h1 v-else>{{ $route.params.id }}</h1>
     <NavMenu :items="navMenuItems" name="武器"></NavMenu>
+    <ScrollMenu v-show="scrollTop > 150" :items="navMenuItems"></ScrollMenu>
     <router-view/>
   </div>
 </template>
 
 <script>
 import NavMenu from '@/components/NavMenu'
+import ScrollMenu from '@/components/ScrollMenu'
 export default {
   name: 'Weapon',
   data () {
     return {
+      scrollTop: 0,
       msg: '武器导航',
       navMenuItems: [
         {path: 'gun', text: '双枪', id: 1},
@@ -24,12 +27,28 @@ export default {
       ]
     }
   },
+  mounted () {
+    window.addEventListener('scroll', this._handleScroll)
+  },
+  methods: {
+    // 获取滚动条高度
+    _handleScroll () {
+      const scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop
+      this.scrollTop = scrollTop
+    }
+  },
   components: {
-    NavMenu
+    NavMenu,
+    ScrollMenu
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
+.weapon {
+  height: 16rem;
+}
 </style>
