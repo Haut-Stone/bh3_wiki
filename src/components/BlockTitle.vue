@@ -61,7 +61,7 @@ export default {
     color: #1c2b42;
     font-weight: bold;
   }
-  .rightTxt {
+  .right_text {
     text-align: right;
     margin-right: .133rem;
     color: #9ca3ad;
