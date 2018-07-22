@@ -6,7 +6,7 @@
     <section class="main">
       <div class="hbox">
         <div class="pic character">
-          <router-link to=""><button class="enter_button"></button></router-link>
+          <router-link to="valkyrie"><button class="enter_button"></button></router-link>
         </div>
         <div class="pic weapon">
           <router-link to="weapon/gun"><button class="enter_button"></button></router-link>
