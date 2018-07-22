@@ -60,10 +60,10 @@ export default {
 
 <style lang="scss" scoped>
 .indexTest {
- body{ 
+body {
   background-image: url(../assets/images/bg1.png);
   height: 17.90rem;
-background-size: 100%;
+  background-size: 100%;
 }
 
   .header {
