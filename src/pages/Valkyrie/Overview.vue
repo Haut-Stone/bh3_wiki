@@ -66,7 +66,7 @@
             <img :src="HOST + overview.dormitoryImage" alt="" v-if="overview.dormitoryImage">
           </div>
           <div class="icon">
-            <img src="../../../assets/images/dormitoryImageIcon.png" alt="">
+            <img src="../../assets/images/dormitoryImageIcon.png" alt="">
           </div>
           <div class="imageQ">
             <img :src="HOST + overview.dormitoryImageQ" alt="" v-if="overview.dormitoryImageQ">
@@ -124,10 +124,10 @@
 </template>
 
 <script>
-import RoleName from '@/components/Valkyrie/RoleName/RoleName'
+import RoleName from '@/components/Valkyrie/RoleName'
 import BlockTitle from '@/components/BlockTitle'
 import Star from '@/components/Star'
-import FitLineTitle from '@/components/Valkyrie/FitLineTitle/FitLineTitle'
+import FitLineTitle from '@/components/Valkyrie/FitLineTitle'
 import NoData from '@/components/NoData'
 import router from '@/router'
 export default {
@@ -283,26 +283,26 @@ export default {
           width: 1rem;
           height: 0.64rem;
           margin-top: -0.2rem;
-          background: url("../../../assets/images/icon-s.png") no-repeat;
+          background: url("../../assets/images/icon-s.png") no-repeat;
           background-size: auto 0.64rem;
           &.icon-B {
-            background: url("../../../assets/images/icon-b.png") no-repeat;
+            background: url("../../assets/images/icon-b.png") no-repeat;
             background-size: auto 0.64rem;
           }
           &.icon-A {
-            background: url("../../../assets/images/icon-a.png") no-repeat;
+            background: url("../../assets/images/icon-a.png") no-repeat;
             background-size: auto 0.64rem;
           }
           &.icon-S {
-            background: url("../../../assets/images/icon-s.png") no-repeat;
+            background: url("../../assets/images/icon-s.png") no-repeat;
             background-size: auto 0.64rem;
           }
           &.icon-SS {
-            background: url("../../../assets/images/icon-ss.png") no-repeat;
+            background: url("../../assets/images/icon-ss.png") no-repeat;
             background-size: auto 0.64rem;
           }
           &.icon-SSS {
-            background: url("../../../assets/images/icon-sss.png") no-repeat;
+            background: url("../../assets/images/icon-sss.png") no-repeat;
             background-size: auto 0.64rem;
           }
         }

@@ -3,14 +3,14 @@
       <div class="armorListWrap" @click.stop>
         <!-- logo -->
         <div class="logo">
-            <img src="../../../assets/images/logo.png" alt="">
+            <img src="../../assets/images/logo.png" alt="">
         </div>
         <!-- 女武神列表 -->
         <div class="listWrap">
           <div class="listItem" v-for="(item,index) in armorList" :key="index">
             <div class="roleName" @click="_toggleArmorItem(index)">
                 <h2>{{item.roleName}}</h2>
-                <img src="../../../assets/images/dropdown.png" :class="item.defaultActive ?'':'active'" alt="">
+                <img src="../../assets/images/dropdown.png" :class="item.defaultActive ?'':'active'" alt="">
             </div>
             <transition name="slideDown">
               <ul class="armorItem" v-show="item.defaultActive">
@@ -112,7 +112,7 @@ export default {
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background: #1c2b42 url("../../../assets/images/sideBarBg.png") center no-repeat;
+    background: #1c2b42 url("../../assets/images/sideBarBg.png") center no-repeat;
     background-position-y: 2.5rem;
     background-size: 4.267rem;
     &::-webkit-scrollbar {
@@ -130,7 +130,7 @@ export default {
       height: 0.96rem;
       padding-top: 0.32rem;
       text-align: center;
-      background: #1c2b42 url("../../../assets/images/logoLine.png") center bottom no-repeat;
+      background: #1c2b42 url("../../assets/images/logoLine.png") center bottom no-repeat;
       background-size: 6rem;
       img {
         width: 1.467rem;

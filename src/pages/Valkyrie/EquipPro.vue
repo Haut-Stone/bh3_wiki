@@ -6,9 +6,9 @@
       <div class="equipmentList">
         <div class="listItem" v-for="(item,index) in equipPro" :key="index">
           <div class="listTitle">
-            <img src="../../../assets/images/ItemType_Stigmata1.png" alt="">
+            <img src="../../assets/images/ItemType_Stigmata1.png" alt="">
             <span>{{item.proName}}</span>
-            <img src="../../../assets/images/ItemType_Stigmata1.png" alt="">
+            <img src="../../assets/images/ItemType_Stigmata1.png" alt="">
           </div>
           <div class="listContent">
             <img :src="HOST + item.arm.imageUrl" alt="">
@@ -107,7 +107,7 @@
 </template>
 
 <script>
-import RoleName from '@/components/Valkyrie/RoleName/RoleName'
+import RoleName from '@/components/Valkyrie/RoleName'
 import BlockTitle from '@/components/BlockTitle'
 import Star from '@/components/Star'
 import NoData from '@/components/NoData'
@@ -183,7 +183,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../../common/scss/common";
+@import "../../common/scss/common";
 
 .equipPro {
   .equipmentList {

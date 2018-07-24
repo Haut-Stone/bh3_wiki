@@ -7,7 +7,7 @@
         <div class="teamInfoWrap" v-for="(teamItem,index) in team" :key="index">
           <div class="team-info">
             <h2 class="team-name">{{teamItem.name}}</h2>
-            <img class="team-break" src="../../../assets/images/team-break.png">
+            <img class="team-break" src="../../assets/images/team-break.png">
             <p class="team-features">{{teamItem.feature}}</p>
             <button @click="moveTo(index)" class="team-button font-style-1">查看</button>
           </div>
@@ -33,9 +33,9 @@
               <h2 class="character-skills">{{member.feature}}</h2>
               <img class="character-img" :src="HOST + member.avatar" alt="">
               <p class="character-name">{{member.name}}</p>
-              <img class="character-attr" v-if="member.type === '生物'" src="../../../assets/images/biological.png" alt="">
-              <img class="character-attr" v-else-if="member.type === '异能'" src="../../../assets/images/ability.png" alt="">
-              <img class="character-attr" v-else-if="member.type === '机械'" src="../../../assets/images/mechanical.png" alt="">
+              <img class="character-attr" v-if="member.type === '生物'" src="../../assets/images/biological.png" alt="">
+              <img class="character-attr" v-else-if="member.type === '异能'" src="../../assets/images/ability.png" alt="">
+              <img class="character-attr" v-else-if="member.type === '机械'" src="../../assets/images/mechanical.png" alt="">
             </div>
           </div>
           <div class="text-box light">
@@ -67,9 +67,9 @@
 </template>
 
 <script>
-import RoleName from '@/components/Valkyrie/RoleName/RoleName'
+import RoleName from '@/components/Valkyrie/RoleName'
 import BlockTitle from '@/components/BlockTitle'
-import FitLineTitle from '@/components/Valkyrie/FitLineTitle/FitLineTitle'
+import FitLineTitle from '@/components/Valkyrie/FitLineTitle'
 import NoData from '@/components/NoData'
 import router from '@/router/index'
 
@@ -141,7 +141,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../../common/scss/common';
+@import '../../common/scss/common';
 
 .team{
   margin-bottom: .32rem;
@@ -245,7 +245,7 @@ export default {
             height: .24rem;
             display: inline-block;
             vertical-align: middle;
-            background: url('../../../assets/images/featuresIcon.png') no-repeat;
+            background: url('../../assets/images/featuresIcon.png') no-repeat;
             background-size: .16rem .24rem;
             margin-right: .16rem;
           }

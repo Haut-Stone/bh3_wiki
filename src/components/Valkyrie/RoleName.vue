@@ -74,7 +74,7 @@ export default {
                     margin-right: 2px;
                     width: .347rem;
                     height: .347rem;
-                    background: url("../../../assets/images/biological.png") no-repeat;
+                    background: url("../../assets/images/biological.png") no-repeat;
                     background-size: .347rem;
                 }
             }
@@ -87,7 +87,7 @@ export default {
                     margin-right: 2px;
                     width: .347rem;
                     height: .347rem;
-                    background: url("../../../assets/images/ability.png") no-repeat;
+                    background: url("../../assets/images/ability.png") no-repeat;
                     background-size: .347rem;
                 }
             }
@@ -100,7 +100,7 @@ export default {
                     margin-right: 2px;
                     width: .347rem;
                     height: .347rem;
-                    background: url("../../../assets/images/mechanical.png") no-repeat;
+                    background: url("../../assets/images/mechanical.png") no-repeat;
                     background-size: .347rem;
                 }
             }

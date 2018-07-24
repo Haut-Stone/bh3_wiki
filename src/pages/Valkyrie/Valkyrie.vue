@@ -19,6 +19,7 @@
       :armorName="armorData.armorName"
       @showArmorList="_showArmorList"
       v-show="scrollTop > 150"
+      :items="navMenuItems"
       ></ScrollMenu>
     </transition>
     <transition name="fade">
@@ -33,10 +34,10 @@
 </template>
 
 <script>
-import NavMenu from '@/components/Valkyrie/NavMenu/NavMenu'
-import ScrollMenu from '@/components/Valkyrie/ScrollMenu/ScrollMenu'
-import BackTop from '@/components/Valkyrie/BackTop/BackTop'
-import ArmorList from '@/components/Valkyrie/ArmorList/ArmorList'
+import NavMenu from '@/components/Valkyrie/NavMenu'
+import ScrollMenu from '@/components/ScrollMenu'
+import BackTop from '@/components/Valkyrie/BackTop'
+import ArmorList from '@/components/Valkyrie/ArmorList'
 import { urlParse } from '@/common/js/util'
 import router from '@/router'
 
@@ -51,7 +52,14 @@ export default {
           return queryParam.armorId
         })()
       },
-      armorListShow: false
+      armorListShow: false,
+      navMenuItems: [
+        {path: 'overview', text: '概览'},
+        {path: 'skill', text: '技能'},
+        {path: 'equipPro', text: '配装'},
+        {path: 'team', text: '组队'},
+        {path: 'raiders', text: '攻略'}
+      ]
     }
   },
   created () {

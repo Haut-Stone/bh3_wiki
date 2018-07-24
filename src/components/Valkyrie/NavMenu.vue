@@ -52,7 +52,7 @@ header{
       position: absolute;
       top: .267rem;
       left: .64rem;
-      background: url("../../../assets/images/menu_icon.png") no-repeat;
+      background: url("../../assets/images/menu_icon.png") no-repeat;
       background-size: .64rem;
   }
 }
@@ -75,7 +75,7 @@ header{
         text-align: center;
         a{
           display: block;
-          background: url('../../../assets/images/topNav_default.png') no-repeat;
+          background: url('../../assets/images/topNav_default.png') no-repeat;
           background-size: 1.6rem .64rem;
           color: #1c2b42;
           &.active{

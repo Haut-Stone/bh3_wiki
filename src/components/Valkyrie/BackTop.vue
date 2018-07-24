@@ -25,13 +25,13 @@ export default {
     position: fixed;
     right: .4rem;
     bottom: .4rem;
-    background: url("../../../assets/images/backTop.png") no-repeat;
+    background: url("../../assets/images/backTop.png") no-repeat;
     background-size: 1.28rem;
     z-index: 10;
 }
 .backIndex{
   bottom: 1.8rem;
-  background: url("../../../assets/images/backHome.png") no-repeat;
+  background: url("../../assets/images/backHome.png") no-repeat;
   background-size: 1.28rem;
 }
 </style>

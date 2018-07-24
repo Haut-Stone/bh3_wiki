@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import RoleName from '@/components/Valkyrie/RoleName/RoleName'
+import RoleName from '@/components/Valkyrie/RoleName'
 import BlockTitle from '@/components/BlockTitle'
 import NoData from '@/components/NoData'
 import router from '@/router/index'
@@ -163,12 +163,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../../../common/scss/common";
+@import "../../common/scss/common";
 
 .skill {
   .skillNav {
     margin-top: 1.067rem;
-    background: url("../../../assets/images/skillNavBg.png") no-repeat center;
+    background: url("../../assets/images/skillNavBg.png") no-repeat center;
     background-position-y: 0.4rem;
     background-size: 4.5rem;
     overflow: hidden;
@@ -182,7 +182,7 @@ export default {
       .image {
         width: 1.253rem;
         height: 1.253rem;
-        background: url("../../../assets/images/circle.png") no-repeat;
+        background: url("../../assets/images/circle.png") no-repeat;
         background-size: 1.253rem;
         img {
           width: 1.253rem;
@@ -283,7 +283,7 @@ export default {
               width: 1.467rem;
               margin-right: 0.32rem;
               text-align: center;
-              background: url("../../../assets/images/circle.png") center top no-repeat;
+              background: url("../../assets/images/circle.png") center top no-repeat;
               background-size: 1.253rem;
               img {
                 width: 1.253rem;

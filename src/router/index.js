@@ -13,11 +13,11 @@ import Goods from '@/pages/Phase3/Goods'
 import GoodsList from '@/pages/Phase3/GoodsList'
 import GoodsDetail from '@/pages/Phase3/GoodsDetail'
 import Valkyrie from '@/pages/Valkyrie/Valkyrie'
-import ValkyrieOverview from '@/pages/Valkyrie/Overview/Overview'
-import ValkyrieSkill from '@/pages/Valkyrie/Skill/Skill'
-import ValkyrieEquipPro from '@/pages/Valkyrie/EquipPro/EquipPro'
-import ValkyrieTeam from '@/pages/Valkyrie/Team/Team'
-import ValkyrieRaiders from '@/pages/Valkyrie/Raiders/Raiders'
+import ValkyrieOverview from '@/pages/Valkyrie/Overview'
+import ValkyrieSkill from '@/pages/Valkyrie/Skill'
+import ValkyrieEquipPro from '@/pages/Valkyrie/EquipPro'
+import ValkyrieTeam from '@/pages/Valkyrie/Team'
+import ValkyrieRaiders from '@/pages/Valkyrie/Raiders'
 
 Vue.use(Router)
 
@@ -37,6 +37,7 @@ export default new Router({
     {
       path: '/valkyrie',
       name: 'Valkyrie',
+      redirect: '/valkyrie/overview',
       component: Valkyrie,
       children: [
         {path: 'overview', component: ValkyrieOverview},
