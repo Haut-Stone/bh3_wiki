@@ -19,17 +19,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.backTop,.backIndex{
-    width: 1.28rem;
-    height: 1.28rem;
-    position: fixed;
-    right: .4rem;
-    bottom: .4rem;
-    background: url("../../assets/images/backTop.png") no-repeat;
-    background-size: 1.28rem;
-    z-index: 10;
+.backTop, .backIndex {
+  width: 1.28rem;
+  height: 1.28rem;
+  position: fixed;
+  right: .4rem;
+  bottom: .4rem;
+  background: url("../../assets/images/backTop.png") no-repeat;
+  background-size: 1.28rem;
+  z-index: 10;
 }
-.backIndex{
+.backIndex {
   bottom: 1.8rem;
   background: url("../../assets/images/backHome.png") no-repeat;
   background-size: 1.28rem;

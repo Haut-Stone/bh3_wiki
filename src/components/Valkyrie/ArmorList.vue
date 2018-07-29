@@ -1,32 +1,32 @@
 <template>
   <div class="armorList" @click="_hideList($el)">
-      <div class="armorListWrap" @click.stop>
-        <!-- logo -->
-        <div class="logo">
-            <img src="../../assets/images/logo.png" alt="">
-        </div>
-        <!-- 女武神列表 -->
-        <div class="listWrap">
-          <div class="listItem" v-for="(item,index) in armorList" :key="index">
-            <div class="roleName" @click="_toggleArmorItem(index)">
-                <h2>{{item.roleName}}</h2>
-                <img src="../../assets/images/dropdown.png" :class="item.defaultActive ?'':'active'" alt="">
-            </div>
-            <transition name="slideDown">
-              <ul class="armorItem" v-show="item.defaultActive">
-                <li
-                :class="armorId == armorItem.armorId ? 'active' : ''"
-                v-for="(armorItem,armorIndex) in item.armorList"
-                :key="armorIndex" @click="getId(armorItem.armorId)"
-                >
-                    <span>{{armorItem.armorName}}</span>
-                </li>
-              </ul>
-            </transition>
-          </div>
-        </div>
+    <div class="armorListWrap" @click.stop>
+      <!-- logo -->
+      <div class="logo">
+        <img src="../../assets/images/logo.png" alt="">
       </div>
+      <!-- 女武神列表 -->
+      <div class="listWrap">
+        <div class="listItem" v-for="(item,index) in armorList" :key="index">
+          <div class="roleName" @click="_toggleArmorItem(index)">
+            <h2>{{item.roleName}}</h2>
+            <img src="../../assets/images/dropdown.png" :class="item.defaultActive ?'':'active'" alt="">
+          </div>
+          <transition name="slideDown">
+            <ul class="armorItem" v-show="item.defaultActive">
+              <li
+              :class="armorId == armorItem.armorId ? 'active' : ''"
+              v-for="(armorItem,armorIndex) in item.armorList"
+              :key="armorIndex" @click="getId(armorItem.armorId)"
+              >
+              <span>{{armorItem.armorName}}</span>
+            </li>
+          </ul>
+        </transition>
+      </div>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -137,7 +137,7 @@ export default {
         height: 0.587rem;
       }
     }
-    .listWrap{
+    .listWrap {
       margin-top: 1.12rem;
       .listItem {
         padding: 0.16rem 0;

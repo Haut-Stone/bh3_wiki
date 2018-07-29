@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style>
-#app {
+/*#app {
   text-align: center;
-}
+}*/
 </style>
