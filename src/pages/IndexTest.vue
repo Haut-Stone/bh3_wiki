@@ -6,7 +6,7 @@
     <section class="main">
       <div class="hbox">
         <div class="pic character">
-          <router-link to=""><button class="enter_button"></button></router-link>
+          <router-link to="valkyrie"><button class="enter_button"></button></router-link>
         </div>
         <div class="pic weapon">
           <router-link to="weapon/gun"><button class="enter_button"></button></router-link>
@@ -60,8 +60,12 @@ export default {
 
 <style lang="scss" scoped>
 .indexTest {
-  // background-image: url(../assets/images/index_bg.png);
+body {
+  background-image: url(../assets/images/bg1.png);
   height: 17.90rem;
+  background-size: 100%;
+}
+
   .header {
     display: flex;
     justify-content: center;
@@ -73,22 +77,22 @@ export default {
     }
   }
   .main {
-    .hbox {
-      padding: .53rem .53rem 0 .53rem;
+    .hbox{
+      padding: .4rem .4rem 0 .4rem;
       display: flex;
-      .pic {
+      .pic{
         position: relative;
-        height: 6.51rem;
+        height: 6.4rem;
         text-align: center;
         flex: 1;
         background-size: cover;
-        .enter_button {
+        .enter_button{
           position: absolute;
           background-image: url(../assets/images/index_enter_dark.png);
           background-size: cover;
           background-color: transparent;
           border: none;
-          top: 5.60rem;
+          top: 5.51rem;
           left: 1.33rem;
           height: .75rem;
           width: 1.95rem;
@@ -99,19 +103,19 @@ export default {
       }
       .character {
         background-image: url(../assets/images/index_character.png);
-        margin-right: .27rem;
+        margin-right: .1rem;
       }
       .weapon {
         background-image: url(../assets/images/index_weapon.png);
-        margin-left: .27rem;
+        margin-left: .1rem;
       }
       .stigmata {
         background-image: url(../assets/images/index_stigmata.png);
-        margin-right: .27rem;
+        margin-right: .1rem;
       }
       .goods {
         background-image: url(../assets/images/index_goods.png);
-        margin-left: .27rem;
+        margin-left: .1rem;
       }
     }
     .sakura_bg_box {
@@ -136,7 +140,8 @@ export default {
     }
     .box5 {
       z-index: -5;
-      background-image: url(../assets/images/index_bg.png);
+      background-image: url(../assets/images/bg1.png);
+      background-size: 100%;
     }
   }
   .footer {

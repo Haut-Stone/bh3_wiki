@@ -27,7 +27,7 @@ export default {
 .star{
   width: 1.533rem;
   height: .267rem;
-  background: url('../../assets/images/star.png') no-repeat;
+  background: url('../assets/images/star.png') no-repeat;
   background-size: 1.533rem .267rem;
 }
 </style>

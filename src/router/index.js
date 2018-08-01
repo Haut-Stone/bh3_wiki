@@ -12,10 +12,17 @@ import NotFound404 from '@/pages/NotFound404'
 import Goods from '@/pages/Phase3/Goods'
 import GoodsList from '@/pages/Phase3/GoodsList'
 import GoodsDetail from '@/pages/Phase3/GoodsDetail'
+import Valkyrie from '@/pages/Valkyrie/Valkyrie'
+import ValkyrieOverview from '@/pages/Valkyrie/Overview'
+import ValkyrieSkill from '@/pages/Valkyrie/Skill'
+import ValkyrieEquipPro from '@/pages/Valkyrie/EquipPro'
+import ValkyrieTeam from '@/pages/Valkyrie/Team'
+import ValkyrieRaiders from '@/pages/Valkyrie/Raiders'
 
 Vue.use(Router)
 
 export default new Router({
+  linkActiveClass: 'active',
   routes: [
     {
       path: '/',
@@ -26,6 +33,19 @@ export default new Router({
       path: '/hello',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/valkyrie',
+      name: 'Valkyrie',
+      redirect: '/valkyrie/overview',
+      component: Valkyrie,
+      children: [
+        {path: 'overview', component: ValkyrieOverview},
+        {path: 'skill', component: ValkyrieSkill},
+        {path: 'equipPro', component: ValkyrieEquipPro},
+        {path: 'team', component: ValkyrieTeam},
+        {path: 'raiders', component: ValkyrieRaiders}
+      ]
     },
     {
       path: '/weapon',

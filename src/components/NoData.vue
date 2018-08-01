@@ -2,7 +2,7 @@
   <div class="no_data">
     <p>数据录入中...</p>
     <p>更多崩坏3攻略请关注公众号</p>
-    <img src="../../assets/images/qr_code.png" alt="">
+    <img src="../assets/images/qr_code.png" alt="">
   </div>
 </template>
 
