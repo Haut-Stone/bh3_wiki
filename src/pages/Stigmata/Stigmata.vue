@@ -1,4 +1,4 @@
-<template>
+np<template>
   <div class="stigmata">
     <h1 v-if="$route.params.star">{{ $route.params.star }}</h1>
     <h1 v-else>{{ $route.params.id }}</h1>
